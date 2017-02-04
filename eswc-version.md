@@ -1,10 +1,10 @@
 # Improving the Classification of Events in Tweets using Semantic Enrichment
 
-##### Results of the experiments, using the Semantic Enrichment Framework**
+### Results of the experiments, using the Semantic Enrichment Framework
 
-##TO-DO
+#####TO-DO
 
-##### Using word embeddings for event classification in tweets
+### Using word embeddings for event classification in tweets
 
 We adopted as the baseline a word embeddings based approach, which considers the co-occurrence of the words from the vocabulary encoded as real-valued vectors in a dimensional space. The distance between these vectors can be used to represent the semantic similarity between the  words within a domain (e.g. 'flood', 'rain' and 'storm' would have close embeddings). We choose this approach since it captures the syntactic and semantic characteristics of a word, allowing their representation in different contexts. Further, word embeddings can be considered as a primitive form of contextual enrichment, which allows us to compare our semantic enrichment approach to another kind of contextual enrichment. 
 
