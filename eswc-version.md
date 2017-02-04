@@ -13,7 +13,7 @@ For the experiments, we used a pre-built word embeddings model trained over 2 bi
 The figure bellow shows the results of the word embeddings approach for event classification.
 ![alt tag](https://cloud.githubusercontent.com/assets/5015987/22621991/66098ba6-eb17-11e6-9ac9-4bb6125df72d.PNG)
 
-##### Performance Comparison
+### Performance Comparison
 
 We validate our results for each metric through a statistical test, using two-tail paired _t-test_. For the comparison, we analyzed each dataset variation and classifier against the baseline built using word embeddings. We claim the improvement is _significant_ with significance level of _alpha_ = 0.05, and _very significant_ if  _alpha_ = 0.01. 
 
