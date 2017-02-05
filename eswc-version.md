@@ -1,8 +1,17 @@
 # Improving the Classification of Events in Tweets using Semantic Enrichment
 
-### Results of the experiments, using the Semantic Enrichment Framework
+Details of the proposed semantic enrichment framework for event classification in tweets are presented in the paper submitted to the 14th ESWC 2017. In this online appendix, we present important results that could not be inserted in the paper due to space limitations.
 
-#####TO-DO
+
+### Using the Semantic Enrichment Framework for event classification in tweets
+
+The figure below presents the results of the experiments performed using the seven event target datasets, all types of features (i.e. TERMS, NER, and ALL), and the WP/PR/PR+CFS combinations (i.e. without pruning, using only the Semantic Feature Pruning algorithm, and the application of the Semantic Feature Pruning algorithm in combination with the CfsSubsetEval feature selection technique).
+
+For the classification, we used the algorithms available in Weka (version 3.8.0): Naive Bayes (NB) and an implementation of SVM called Sequential Minimal Optimization (SMO), with PolyKernel, since it is quite popular on Natural Language Preocessing (NLP) applications. We compared the results using F-measure (F), Precision (P) and Recall (R) metrics. We also used the Weka's default parameters and 5-fold cross-validation.
+
+
+![alt tag] (https://cloud.githubusercontent.com/assets/5015987/22629606/27508d88-ebd0-11e6-88b0-5fa3a237d779.PNG)
+
 
 ### Using word embeddings for event classification in tweets
 
@@ -15,12 +24,10 @@ The figure bellow shows the results of the word embeddings approach for event cl
 
 ### Performance Comparison
 
+We compared semantic enrichment according to our approach against the use of word embeddings as a means of incorporating contextual information to tweets. Word embeddings-based approaches have been widely used for text classification, since they capture syntactic and semantic characteristics of a word and from the knowledge provided by co-occurrence statistics [10, 11]. Our results show the advantages of using external and semantic enrichment for event classification in tweets, outperforming the baseline in 96.5% of the cases.
+
 We validate our results for each metric through a statistical test, using two-tail paired _t-test_. For the comparison, we analyzed each dataset variation and classifier against the baseline built using word embeddings. We claim the improvement is _significant_ with significance level of _alpha_ = 0.05, and _very significant_ if  _alpha_ = 0.01. 
 
 The figures bellow show the results for NB and SVM algorithm classifiers, respectively.
-![alt tag](https://cloud.githubusercontent.com/assets/5015987/22621966/ffc27bd2-eb16-11e6-8656-a25ba8c5719e.PNG)
-![alt tag](https://cloud.githubusercontent.com/assets/5015987/22621967/ffed7ff8-eb16-11e6-8639-f6e3eddcb37e.PNG)
 
-Discussion about the results are detailed in the paper.
-
-
+Our semantic enrichment framework statistically outperformed the baseline in 94% of the cases.
