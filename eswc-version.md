@@ -19,15 +19,23 @@ We adopted as the baseline a word embeddings based approach, which considers the
 
 For the experiments, we used a pre-built word embeddings model trained over 2 billions tweets, representing a 1.2 millions vocabulary, which was trained using GloVe. We employed a model built in a 50-dimension space. Regarding the word features, we applied the mean technique, in which we calculate the mean of all word vectors recognized for each term in a tweet. Thus each tweet has been encoded into a unique vector representation, containing a 50-dimensional array. For the classification, we employed the supervised algorithms NB and SVM in a 5-fold cross-validation configuration.
 
-The figure bellow shows the results of the word embeddings approach for event classification.
+The figure below shows the results of the word embeddings approach for event classification.
 ![alt tag](https://cloud.githubusercontent.com/assets/5015987/22621991/66098ba6-eb17-11e6-9ac9-4bb6125df72d.PNG)
 
 ### Performance Comparison
 
-We compared semantic enrichment according to our approach against the use of word embeddings as a means of incorporating contextual information to tweets. Word embeddings-based approaches have been widely used for text classification, since they capture syntactic and semantic characteristics of a word and from the knowledge provided by co-occurrence statistics [10, 11]. Our results show the advantages of using external and semantic enrichment for event classification in tweets, outperforming the baseline in 96.5% of the cases.
+We compared semantic enrichment according to our approach against the use of word embeddings as a means of incorporating contextual information to tweets. We calculated the difference between the correspondent combination of our approach (i.e. TERMS/NER/ALL, WP/PR/PR+CFS, and NB/SVM) and the word embeddings results. The results show the advantages of using our external and semantic enrichment approach for event classification in tweets, outperforming the baseline in 96.5% of the cases.
 
-We validate our results for each metric through a statistical test, using two-tail paired _t-test_. For the comparison, we analyzed each dataset variation and classifier against the baseline built using word embeddings. We claim the improvement is _significant_ with significance level of _alpha_ = 0.05, and _very significant_ if  _alpha_ = 0.01. 
+Then, we validate our results for each metric through a statistical test, using two-tail paired _t-test_. For the comparison, we analyzed each dataset variation and classifier against the baseline built using word embeddings. We claim the improvement is _significant_ with significance level of _alpha_ = 0.05, and _very significant_ if  _alpha_ = 0.01. 
 
-The figures bellow show the results for NB and SVM algorithm classifiers, respectively.
+The figure below shows the results for NB and SVM algorithm classifiers, considering the WP configuration.
+![alt_tag](https://cloud.githubusercontent.com/assets/5015987/22630191/40930f58-ebdc-11e6-80a8-535cdebff48f.PNG)
 
-Our semantic enrichment framework statistically outperformed the baseline in 94% of the cases.
+
+The figure below shows the results for NB and SVM algorithm classifiers, considering the PR configuration.
+![alt_tag](https://cloud.githubusercontent.com/assets/5015987/22630192/40934626-ebdc-11e6-92f2-39a8201073e3.PNG)
+
+The figure below shows the results for NB and SVM algorithm classifiers, considering the PR+CFS configuration.
+![alt_tag](https://cloud.githubusercontent.com/assets/5015987/22630190/408fe774-ebdc-11e6-818c-7e062a94f211.PNG)
+
+Considering these results, our semantic enrichment framework statistically outperformed the baseline in 94% of the cases.
