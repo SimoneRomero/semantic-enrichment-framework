@@ -1,6 +1,6 @@
 # Improving the Classification of Events in Tweets using Semantic Enrichment
 
-Details of the proposed semantic enrichment framework for event classification in tweets are presented in the paper submitted to the 14th ESWC 2017. In this online appendix, we present important results that could not be inserted in the paper due to space limitations.
+In this online appendix, we present important results that could not be inserted in the paper due to space limitations.
 
 
 ### Using the Semantic Enrichment Framework for event classification in tweets
