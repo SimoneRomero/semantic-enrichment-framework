@@ -34,7 +34,9 @@ The figure below shows the results for NB and SMO algorithm classifiers, conside
 The figure below shows the results for NB and SMO algorithm classifiers, considering the PR+FS combination.
 ![alt tag] (https://cloud.githubusercontent.com/assets/5015987/23714900/a314caf0-0409-11e7-9e28-7e4d6f594eab.PNG)
 
+We also experimented with feature selection-only, but as the results were, in general, inferior and dependent on the algorithm as shown in the figure bellow, these results are not discussed in the paper.
 
+![alt tag] (https://cloud.githubusercontent.com/assets/5015987/23862984/41dca554-07ed-11e7-86ff-950312c2b558.png)
 
 ### Using word embeddings for event classification in tweets
 
