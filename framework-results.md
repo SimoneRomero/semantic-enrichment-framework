@@ -15,28 +15,28 @@ As the baseline, we considered only textual features. The baseline is composed b
 Next, we present the results of the application of each combination for the seven event target datasets, compared to a textual features only baseline. In these tables, we present the results for the positive class of each metric. The results depicted with (\*) represent that the baseline is statistically superior, whereas the (v) symbol means that the combination analyzed is statically superior against the baseline. Otherwise, there is no statistic difference between the results. 
 
 The figure below shows the results for NB and SMO algorithm classifiers, considering the WP combination, for the positive class.
-![alt tag] (https://cloud.githubusercontent.com/assets/5015987/23714901/a315d0e4-0409-11e7-9284-597a3a733596.PNG)
+![alt tag](https://cloud.githubusercontent.com/assets/5015987/23714901/a315d0e4-0409-11e7-9284-597a3a733596.PNG)
 
 The figure below shows the results for NB and SMO algorithm classifiers, considering the PR combination, for the positive class.
-![alt tag] (https://cloud.githubusercontent.com/assets/5015987/23714898/a3128e98-0409-11e7-9ce6-2d60d3932957.PNG)
+![alt tag](https://cloud.githubusercontent.com/assets/5015987/23714898/a3128e98-0409-11e7-9ce6-2d60d3932957.PNG)
 
 The figure below shows the results for NB and SMO algorithm classifiers, considering the PR+FS combination, for the positive class.
-![alt tag] (https://cloud.githubusercontent.com/assets/5015987/23714899/a313f1c0-0409-11e7-9ce7-d45b3f5046ae.PNG)
+![alt tag](https://cloud.githubusercontent.com/assets/5015987/23714899/a313f1c0-0409-11e7-9ce7-d45b3f5046ae.PNG)
 
 The same results are also presented for the weighted metric.
 
 The figure below shows the results for NB and SMO algorithm classifiers, considering the WP combination.
-![alt tag] (https://cloud.githubusercontent.com/assets/5015987/23714902/a3167a62-0409-11e7-813c-3c7aa77942fd.PNG)
+![alt tag](https://cloud.githubusercontent.com/assets/5015987/23714902/a3167a62-0409-11e7-813c-3c7aa77942fd.PNG)
 
 The figure below shows the results for NB and SMO algorithm classifiers, considering the PR combination.
-![alt tag] (https://cloud.githubusercontent.com/assets/5015987/23714904/a3a63422-0409-11e7-9a68-58e07a20ddab.PNG)
+![alt tag](https://cloud.githubusercontent.com/assets/5015987/23714904/a3a63422-0409-11e7-9a68-58e07a20ddab.PNG)
 
 The figure below shows the results for NB and SMO algorithm classifiers, considering the PR+FS combination.
-![alt tag] (https://cloud.githubusercontent.com/assets/5015987/23714900/a314caf0-0409-11e7-9e28-7e4d6f594eab.PNG)
+![alt tag](https://cloud.githubusercontent.com/assets/5015987/23714900/a314caf0-0409-11e7-9e28-7e4d6f594eab.PNG)
 
 We also experimented with feature selection-only, but as the results were, in general, inferior and dependent on the algorithm as shown in the figure bellow, these results are not discussed in the paper.
 
-![alt tag] (https://cloud.githubusercontent.com/assets/5015987/23862984/41dca554-07ed-11e7-86ff-950312c2b558.png)
+![alt tag](https://cloud.githubusercontent.com/assets/5015987/23862984/41dca554-07ed-11e7-86ff-950312c2b558.png)
 
 ### Using word embeddings for event classification in tweets
 
