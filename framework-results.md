@@ -54,6 +54,8 @@ We compared semantic enrichment according to our approach against the use of wor
 
 Then, we validate our results for each metric through a statistical test, using two-tail paired _t-test_. For the comparison, we analyzed each dataset variation and classifier against the baseline built using word embeddings. We claim the improvement is _significant_ with a significance level of _alpha_ = 0.05, and _very significant_ if  _alpha_ = 0.01. 
 
+In summary, the proposed framework statistically outperformed the baseline in 94.4% of the cases. For the WP datasets, all the results achieved using the SMO classifier were _very significant_. Considering the NB classifier, most of the results achieved _significant_ difference, whereas for NER and TERMS (F-Measure), and NER (Recall) no significance was found. For the PR datasets, almost all improvements were _very significant_, except for TERMS and NER using the NB classifier, which achieved _significant_ improvements. For the PR+FS datasets, the improvements were _very significant_ for all results achieved by the NB classifier, while for the SMO classifier only Recall presented _very significant_ results, for F-Measure and Precision metrics, the improvements were _significant_.
+
 The figure below shows the results for NB and SVM algorithm classifiers, considering the WP configuration.
 ![alt_tag](https://cloud.githubusercontent.com/assets/5015987/22630191/40930f58-ebdc-11e6-80a8-535cdebff48f.PNG)
 
